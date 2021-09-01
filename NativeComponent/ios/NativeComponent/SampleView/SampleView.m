@@ -22,10 +22,14 @@
     button.frame = CGRectMake(50, 100, 200, 50);
     button.backgroundColor = [UIColor yellowColor];
     button.titleLabel.font = [UIFont systemFontOfSize:13];
-    [button setTitle:@"UIButton 组件" forState:UIControlStateNormal];
+    [button setTitle:@"Button" forState:UIControlStateNormal];
     [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     self.ok = button;
     [self addSubview:button];
+}
+
+- (void)setTitle:(NSString*)title {
+    [self.ok setTitle:title forState:UIControlStateNormal];
 }
 
 @end

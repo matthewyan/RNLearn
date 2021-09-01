@@ -12,6 +12,9 @@
 
 RCT_EXPORT_MODULE(SampleView)
 
+// 属性导出
+RCT_EXPORT_VIEW_PROPERTY(title, NSString)
+
 - (UIView *)view {
   return [[SampleView alloc] init];
 }

@@ -12,7 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SampleView : UIView
 
 @property (strong, nonatomic) UIButton *ok;
-//@property (strong, nonatomic) UIButton *cancel;
+
+//@property (nonatomic, copy) NSString *title;
+- (void)setTitle:(NSString*)title;
 
 @end
 
